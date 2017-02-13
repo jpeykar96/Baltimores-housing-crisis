@@ -1,4 +1,4 @@
-export default function modifyVacancy(OGData){
+export default function modifyVacancy(OGData, threshold){
   OGData = OGData.data;
   let dataRet = [
     {
@@ -21,7 +21,7 @@ export default function modifyVacancy(OGData){
   }
   var otherVal = 0;
   for (var x = 0; x < dataRet[0].values.length; x++){
-    if(dataRet[0].values[x].value < 150){
+    if(dataRet[0].values[x].value < threshold){
       otherVal += dataRet[0].values[x].value;
       dataRet[0].values.splice(x, 1);
       x--;

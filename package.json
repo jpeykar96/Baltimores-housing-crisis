@@ -1,11 +1,9 @@
 {
-  "name": "playing-with-react-and-d3",
+  "name": "baltimores-vacant-housing",
   "version": "1.0.0",
-  "description": "From how React and D3 can be friends",
+  "description": "Modified from how React and D3 can be friends",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./test/test-helper.js 'test/**/*.@(js|jsx)'",
-    "test:watch": "npm run test -- --watch",
     "start": "webpack-dev-server",
     "lint": "eslint . --ext .js --ext .jsx"
   },
@@ -17,17 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freddyrangel/playing-with-react-and-d3.git"
+    "url": "git+https://github.com/jpeykar96/Baltimores-housing-crisis.git"
   },
   "keywords": [
     "react"
   ],
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/freddyrangel/playing-with-react-and-d3/issues"
-  },
-  "homepage": "https://github.com/freddyrangel/playing-with-react-and-d3#readme",
   "devDependencies": {
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.3",

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect}            from 'react-redux';
-import Chart from './chart.jsx'
+import VacancyChart from './chart.jsx';
 
 
 const styles = {
@@ -15,7 +15,7 @@ class Main extends Component {
       <div>
         <h1>Baltimore's Vacant Housing Problem</h1>
         <div className="chart">
-          <Chart/>
+          <VacancyChart/>
         </div>
       </div>
     );
