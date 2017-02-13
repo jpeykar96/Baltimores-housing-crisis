@@ -60,11 +60,6 @@ class VacancyChart extends Component {
         x: "Neighborhood",
         y: "Vacancies"
       },
-      onClick: function(d) {
-        let categories = this.categories(); //c3 function, get categorical labels
-        console.log(d);
-        console.log("you clicked {" + d.name + ": " + categories[d.x] + ": " + d.value + "}");
-      },
       pie: {
         label: {
           format: function (value, ratio, id) {
@@ -81,7 +76,6 @@ class VacancyChart extends Component {
     this.setState({threshold: event.target.value});
     let data1 = modifyVacancy(this.data, this.state.threshold);
     this.setState({data: data1});
-    console.log(this.state.threshold);
   }
   render() {
     return (
